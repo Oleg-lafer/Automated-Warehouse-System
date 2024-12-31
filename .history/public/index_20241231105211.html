@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated-Warehouse-System</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Automated Warehouse System</h1>
+    <div>
+        <h2>Add Item</h2>
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="itemQty" placeholder="Quantity">
+        <input type="text" id="itemBarcode" placeholder="Barcode">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+    <div>
+        <h2>Add User</h2>
+        <input type="text" id="userName" placeholder="User Name">
+        <input type="text" id="userPermission" placeholder="Permission">
+        <input type="text" id="userBorrowedItems" placeholder="Borrowed Items">
+        <button onclick="addUser()">Add User</button>
+    </div>
+    <div>
+        <h2>All Items</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Barcode</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="itemsTable"></tbody>
+        </table>
+    </div>
+    <div>
+        <h2>All Users</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Permission</th>
+                    <th>Borrowed Items</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usersTable"></tbody>
+        </table>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
